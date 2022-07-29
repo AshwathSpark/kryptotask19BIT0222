@@ -31,7 +31,7 @@ function App() {
     <div className='login'>
         <p className='loginHead'>Login</p>
     </div>
-      <input type="text" placeholder="Email Address"/>
+      <input type="email" placeholder="Email Address"/>
       <input type="password" placeholder="Password"/>
       <Grid container spacing={2}>
         <Grid item xs={6}>

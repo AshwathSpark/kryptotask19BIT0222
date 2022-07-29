@@ -30,7 +30,7 @@
     box-sizing: border-box;
     font-size: 18px;
   }
-.form input[type=text], input[type=password]{
+.form input[type=email], input[type=password]{
     background: #f1f5fa;
 }
 .form input[type=button]{
