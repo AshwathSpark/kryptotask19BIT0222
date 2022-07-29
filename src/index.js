@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import DrawerAppBar from './Components/Menu/Menu';
 import App from './App';
-import Cart from './Components/Cart/Cart';
+import Cart from './Components/Product/Products';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
