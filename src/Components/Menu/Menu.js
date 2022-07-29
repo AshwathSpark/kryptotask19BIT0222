@@ -14,6 +14,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = ['Products', 'Login'];
@@ -40,7 +41,7 @@ function DrawerAppBar(props) {
             </ListItemButton>
           </ListItem>
         ))}
-
+<Link to="cart">
         <ListItem>
           <ListItemButton>
          
@@ -48,6 +49,8 @@ function DrawerAppBar(props) {
             
           </ListItemButton>
         </ListItem>
+
+        </Link>
       </List>
     </Box>
   );
@@ -80,9 +83,11 @@ function DrawerAppBar(props) {
                 {item}
               </Button>
             ))}
+            <Link to="cart">
             <Button>
               <ShoppingCartIcon  style={{color:"black"}}/>
             </Button>
+            </Link>
           </Box>
           
         </Toolbar>
