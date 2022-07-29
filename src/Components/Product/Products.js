@@ -5,7 +5,7 @@ import {Chip} from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
-function Cart() {
+function Products() {
 
   const [products, setproducts] = useState([])
 
@@ -73,4 +73,4 @@ function Cart() {
   )
 }
 
-export default Cart
+export default Products

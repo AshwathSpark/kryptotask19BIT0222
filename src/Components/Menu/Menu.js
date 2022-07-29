@@ -13,6 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Badge } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './Menu.css';
 import {Link} from 'react-router-dom'
@@ -53,8 +54,9 @@ function DrawerAppBar(props) {
 <Link to="cart">
         <ListItem>
           <ListItemButton>
-         
+          <Badge badgeContent={4} color="secondary">
               <ShoppingCartIcon style={{color:"black"}}/>
+              </Badge>
             
           </ListItemButton>
         </ListItem>
@@ -86,17 +88,25 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontSize: '35px', fontFamily: 'Helvetica', fontWeight: '500'}}
           >
-            ShopKart.
+            <Link to="/">   <span  style={{color:"white", textDecoration:"none"}}>ShopKart.</span></Link>
+         
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }} class="textBox">
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff', textTransform: 'none', fontFamily: 'Helvetica', fontWeight: '10'}}>
-                {item}
+          <Link to="products">
+              <Button sx={{ color: '#fff', textTransform: 'none', fontFamily: 'Helvetica', fontWeight: '10'}}>
+                Products
               </Button>
-            ))}
+
+              </Link>
+              <Button sx={{ color: '#fff', textTransform: 'none', fontFamily: 'Helvetica', fontWeight: '10'}}>
+              Login
+            </Button>
+      
             <Link to="cart">
             <Button>
+            <Badge badgeContent={4} color="secondary">
               <ShoppingCartIcon  style={{color:"black"}}/>
+              </Badge>
             </Button>
             </Link>
           </Box>
