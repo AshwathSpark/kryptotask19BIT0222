@@ -16,6 +16,7 @@ import Button from '@mui/material/Button';
 import { Badge } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './Menu.css';
+// import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {Link} from 'react-router-dom'
 // import { createTheme } from '@mui/material/styles';
 
@@ -23,8 +24,8 @@ const drawerWidth = 240;
 const navItems = ['Products', 'Login'];
 // const customTheme = createTheme({
 //   palette: {
-//     secondary: {
-//       main: "#F5BD1F",
+//     danger: {
+//       main: "red",
 //       contrastText: "#6a0dad "
 //     }
 //   }
@@ -40,7 +41,7 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        ShopKart.
       </Typography>
       <Divider />
       <List>
@@ -54,7 +55,12 @@ function DrawerAppBar(props) {
 <Link to="cart">
         <ListItem>
           <ListItemButton>
-          <Badge badgeContent={4} color="secondary">
+          <Badge badgeContent={4} sx={{
+                "& .MuiBadge-badge": {
+                  color: "white",
+                  backgroundColor: "red"
+                }
+              }}>
               <ShoppingCartIcon style={{color:"black"}}/>
               </Badge>
             
@@ -71,7 +77,7 @@ function DrawerAppBar(props) {
 //   text-transform: none;
 // `);
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box>
       <AppBar  component="nav" style={{backgroundColor:'#087cec'}}>
         <Toolbar className='navbar'>
           <IconButton
@@ -91,7 +97,7 @@ function DrawerAppBar(props) {
             <Link to="/" className='link'>   <span  style={{color:"white", textDecoration:"none"}}>ShopKart.</span></Link>
          
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }} class="textBox">
+          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
           <Link to="products" className='link'>
               <Button sx={{ color: '#fff', textTransform: 'none', fontFamily: 'Helvetica', fontWeight: '10'}}>
                 Products
@@ -104,7 +110,12 @@ function DrawerAppBar(props) {
       
             <Link to="cart" className='link'>
             <Button>
-            <Badge badgeContent={4} color="secondary">
+            <Badge badgeContent={4} sx={{
+                "& .MuiBadge-badge": {
+                  color: "white",
+                  backgroundColor: "red"
+                }
+              }}>
               <ShoppingCartIcon  style={{color:"black"}}/>
               </Badge>
             </Button>

@@ -54,7 +54,7 @@ export default function Cart() {
           <Typography component="div" variant="h5">
             Live From Space
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
+          <Typography variant="subtitle1" color="text.secondary" component="div" sx={{ display: 'flex', alignItems: 'left' }}>
           ₹200
           </Typography>
           
@@ -64,7 +64,7 @@ export default function Cart() {
         <IconButton>
             <AddOutlinedIcon/>
           </IconButton>
-          <IconButton aria-label="play/pause">
+          <IconButton sx={{ border: 'solid', borderRadius:'0px'}}>
             1
           </IconButton>
           <IconButton>
@@ -90,7 +90,7 @@ export default function Cart() {
           <Typography component="div" variant="h5">
             Live From Space
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
+          <Typography variant="subtitle1" color="text.secondary" component="div"sx={{ display: 'flex', alignItems: 'left' }}>
           ₹100
           </Typography>
         </CardContent>
@@ -98,7 +98,7 @@ export default function Cart() {
         <IconButton>
             <AddOutlinedIcon/>
           </IconButton>
-          <IconButton >
+          <IconButton sx={{ border: 'solid', borderRadius:'0px'}}>
             1
           </IconButton>
           <IconButton>
@@ -129,26 +129,26 @@ export default function Cart() {
       <TableContainer >
 
       <Table  >
-      <TableHead>
-          <TableRow>
-            <TableCell>Price</TableCell>
-            <TableCell align='right' >284</TableCell>
+      <TableHead >
+          <TableRow >
+            <TableCell style={{borderBottom:"none"}} >Price</TableCell>
+            <TableCell style={{borderBottom:"none"}} align='right' >284</TableCell>
            
           </TableRow>
           <TableRow>
-            <TableCell>Discount Price</TableCell>
-            <TableCell align='right'>284</TableCell>
+            <TableCell style={{borderBottom:"none"}}>Discount Price</TableCell>
+            <TableCell style={{borderBottom:"none"}} align='right'>284</TableCell>
            
           </TableRow>
           <TableRow>
-            <TableCell>Delivery Charge</TableCell>
-            <TableCell align='right'>284</TableCell>
+            <TableCell style={{borderBottom:"none"}}>Delivery Charge</TableCell>
+            <TableCell style={{borderBottom:"none"}} align='right'>284</TableCell>
            
           </TableRow>
        
           <TableRow>
-            <TableCell><h2>Total</h2></TableCell>
-            <TableCell align='right'><h2>284</h2></TableCell>
+            <TableCell style={{borderBottom:"none"}}><h2>Total</h2></TableCell>
+            <TableCell style={{borderBottom:"none"}} align='right'><h2>284</h2></TableCell>
            
           </TableRow>
         </TableHead>

@@ -3,6 +3,18 @@
     margin: 0px 210px;
 }
 
+@media (max-width: 1300px) {
+    .navbar{
+        margin: 0px 150px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar{
+        margin: 0px 50px;
+    }
+}
+
 .link{
     text-decoration: none!important;
 }

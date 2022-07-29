@@ -37,7 +37,7 @@ function Products() {
 
        
 
-    <Grid container xs={2.4}>
+    <Grid container xs={12} sm={6} md={2.4}>
     <Card sx={{ width: 300 }} style={{margin:"5%"}}>
       <CardMedia
         component="img"
@@ -58,7 +58,7 @@ function Products() {
         </Typography>
       </CardContent>
       <CardActions>
-      <Grid container spacing={8} flex='1' marginBottom={'20px'} justifyContent='flex-end'>
+      <Grid container spacing={8}>
         <Grid item xs={7}>
         <Button size="small"><FavoriteIcon style={{ color: "grey" }}/></Button>
         </Grid>
