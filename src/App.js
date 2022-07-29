@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
+import './App.css'
 
 import Grid from '@mui/material/Grid';
 
@@ -8,10 +9,10 @@ function App() {
     <>
    
 <div style={{display:"flex",justifyContent:"center"}}>
-   <Box
+   <Box className='loginBox'
       sx={{
-        width: 400,
-        height: 400,
+        width: 450,
+        height: 350,
         backgroundColor: '#FEFEFE'
       }}
     >

@@ -15,6 +15,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from "react-router-dom";
+// import { styled, createTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const drawerWidth = 240;
 const navItems = ['Products', 'Login'];
@@ -56,7 +57,9 @@ function DrawerAppBar(props) {
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
-
+//   const StyledButton = styled(Button)(`
+//   text-transform: none;
+// `);
   return (
     <Box sx={{ display: 'flex' }}>
       <AppBar component="nav">
@@ -79,7 +82,7 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button key={item} sx={{ color: '#fff', textTransform: 'none' }}>
                 {item}
               </Button>
             ))}
