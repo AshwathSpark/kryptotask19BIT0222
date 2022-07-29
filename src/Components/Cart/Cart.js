@@ -4,6 +4,7 @@ import { CardMedia,CardContent,Typography,CardActions,Button,Card,Grid } from '@
 import {Chip} from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import './Cart.css';
 
 function Cart() {
 
@@ -28,18 +29,20 @@ function Cart() {
 
   return (
     <div>
-<Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+<div className='addMargin'>
+<Grid container spacing={{ xs: 1, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
 {products.map((product) => (
   <>
        
 
        
 
-    <Grid xs={2} sm={3} md={3} >
-    <Card sx={{ maxWidth: 300 }} style={{margin:"5%"}}>
+    <Grid container xs={2.4}>
+    <Card sx={{ width: 300 }} style={{margin:"5%"}}>
       <CardMedia
         component="img"
         height="140"
+        width="auto"
         image={product.image}
         alt="green iguana"
       />
@@ -55,8 +58,14 @@ function Cart() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small"><FavoriteIcon/></Button>
-        <Button size="small"><AddShoppingCartIcon/></Button>
+      <Grid container spacing={8}>
+        <Grid item xs={7}>
+        <Button size="small"><FavoriteIcon style={{ color: "grey" }}/></Button>
+        </Grid>
+        <Grid item xs={5}>
+        <Button size="small"><AddShoppingCartIcon style={{ color: "grey" }}/></Button>
+        </Grid>
+      </Grid>
       </CardActions>
     </Card>
     </Grid>
@@ -66,7 +75,7 @@ function Cart() {
         
       ))}
 </Grid>
-
+</div>
 
 
     </div>
