@@ -15,6 +15,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './Menu.css';
+import {Link} from 'react-router-dom'
 // import { createTheme } from '@mui/material/styles';
 
 const drawerWidth = 240;
@@ -49,7 +50,7 @@ function DrawerAppBar(props) {
             </ListItemButton>
           </ListItem>
         ))}
-
+<Link to="cart">
         <ListItem>
           <ListItemButton>
          
@@ -57,6 +58,8 @@ function DrawerAppBar(props) {
             
           </ListItemButton>
         </ListItem>
+
+        </Link>
       </List>
     </Box>
   );
@@ -91,9 +94,11 @@ function DrawerAppBar(props) {
                 {item}
               </Button>
             ))}
+            <Link to="cart">
             <Button>
               <ShoppingCartIcon  style={{color:"black"}}/>
             </Button>
+            </Link>
           </Box>
           
         </Toolbar>
