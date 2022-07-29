@@ -34,12 +34,12 @@ function App() {
       <input type="text" placeholder="Email Address"/>
       <input type="password" placeholder="Password"/>
       <Grid container spacing={2}>
-        <Grid item xs={7}>
+        <Grid item xs={6}>
         <Link href="#" underline="none" color="#087cec" fontSize={'18px'}>
           {'New user? Create an account'}
         </Link>
         </Grid>
-        <Grid item xs={5} class="button">
+        <Grid item xs={6} class="button">
           {/* <Button variant="contained" color="neutral" >Login</Button> */}
           <input type="button" value="Login"/>
         </Grid>

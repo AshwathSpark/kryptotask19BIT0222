@@ -88,11 +88,11 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontSize: '35px', fontFamily: 'Helvetica', fontWeight: '500'}}
           >
-            <Link to="/">   <span  style={{color:"white", textDecoration:"none"}}>ShopKart.</span></Link>
+            <Link to="/" className='link'>   <span  style={{color:"white", textDecoration:"none"}}>ShopKart.</span></Link>
          
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }} class="textBox">
-          <Link to="products">
+          <Link to="products" className='link'>
               <Button sx={{ color: '#fff', textTransform: 'none', fontFamily: 'Helvetica', fontWeight: '10'}}>
                 Products
               </Button>
@@ -102,7 +102,7 @@ function DrawerAppBar(props) {
               Login
             </Button>
       
-            <Link to="cart">
+            <Link to="cart" className='link'>
             <Button>
             <Badge badgeContent={4} color="secondary">
               <ShoppingCartIcon  style={{color:"black"}}/>

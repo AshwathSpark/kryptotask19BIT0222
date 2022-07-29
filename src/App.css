@@ -36,7 +36,8 @@
 .form input[type=button]{
     background: #087cec;
     color: white;
-    padding: 10px 20px;
+    /* margin: 15px; */
+    padding: 10px 30px!important;
 }
 .button{
     /* background-color: #087cec;

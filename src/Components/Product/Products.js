@@ -58,7 +58,7 @@ function Products() {
         </Typography>
       </CardContent>
       <CardActions>
-      <Grid container spacing={8}>
+      <Grid container spacing={8} flex='1' marginBottom={'20px'} justifyContent='flex-end'>
         <Grid item xs={7}>
         <Button size="small"><FavoriteIcon style={{ color: "grey" }}/></Button>
         </Grid>

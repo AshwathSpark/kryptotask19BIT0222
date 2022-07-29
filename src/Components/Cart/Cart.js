@@ -11,12 +11,13 @@ import {Button} from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { TableCell,TableRow,TableContainer,Table,TableHead } from '@mui/material';
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
+// import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
+// import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+// import SkipNextIcon from '@mui/icons-material/SkipNext';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
+import './Cart.css'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -31,6 +32,7 @@ export default function Cart() {
     const theme = useTheme();
 
   return (
+    <div className='cartPage'>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={8}>
@@ -115,7 +117,7 @@ export default function Cart() {
 
 
           </Item>
-          <Button variant="contained">Contained</Button>
+          <Button variant="contained" className='cartButton'>Place Order</Button>
         </Grid>
         <Grid item xs={4}>
           <Item>
@@ -160,6 +162,6 @@ export default function Cart() {
         </Grid>
         
       </Grid>
-    </Box>
+    </Box></div>
   );
 }
