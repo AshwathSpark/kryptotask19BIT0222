@@ -1,15 +1,16 @@
 import React from 'react'
 import { Box } from '@mui/material'
+import './App.css'
 
 function App() {
   return (
     <>
    
 <div style={{display:"flex",justifyContent:"center"}}>
-   <Box
+   <Box className='loginBox'
       sx={{
-        width: 400,
-        height: 400,
+        width: 450,
+        height: 350,
         backgroundColor: '#FEFEFE',
         '&:hover': {
           backgroundColor: 'primary.main',
