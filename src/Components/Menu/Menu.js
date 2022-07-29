@@ -14,11 +14,19 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-// import { styled, createTheme, ThemeProvider } from "@material-ui/core/styles";
+import './Menu.css';
+// import { createTheme } from '@mui/material/styles';
 
 const drawerWidth = 240;
 const navItems = ['Products', 'Login'];
-
+// const customTheme = createTheme({
+//   palette: {
+//     secondary: {
+//       main: "#F5BD1F",
+//       contrastText: "#6a0dad "
+//     }
+//   }
+// });
 function DrawerAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -59,8 +67,8 @@ function DrawerAppBar(props) {
 // `);
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav">
-        <Toolbar>
+      <AppBar  component="nav" style={{backgroundColor:'#087cec'}}>
+        <Toolbar className='navbar'>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -73,13 +81,13 @@ function DrawerAppBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontSize: '35px', fontFamily: 'Helvetica', fontWeight: '500'}}
           >
             ShopKart.
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: { xs: 'none', sm: 'block' } }} class="textBox">
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff', textTransform: 'none' }}>
+              <Button key={item} sx={{ color: '#fff', textTransform: 'none', fontFamily: 'Helvetica', fontWeight: '10'}}>
                 {item}
               </Button>
             ))}
