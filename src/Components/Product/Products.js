@@ -4,9 +4,9 @@ import { CardMedia,CardContent,Typography,CardActions,Button,Card,Grid } from '@
 import {Chip} from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import './Cart.css';
+import './Products.css';
 
-function Cart() {
+function Products() {
 
   const [products, setproducts] = useState([])
 
@@ -82,4 +82,4 @@ function Cart() {
   )
 }
 
-export default Cart
+export default Products
