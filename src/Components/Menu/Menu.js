@@ -1,27 +1,27 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import { Badge } from '@mui/material';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import './Menu.css';
+import * as React from "react";
+import PropTypes from "prop-types";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import MenuIcon from "@mui/icons-material/Menu";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import { Badge } from "@mui/material";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import "./Menu.css";
 // import { createTheme, ThemeProvider } from '@mui/material/styles';
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 // import { createTheme } from '@mui/material/styles';
 
 const drawerWidth = 240;
-const navItems = ['Products', 'Login'];
+const navItems = ["Products", "Login"];
 // const customTheme = createTheme({
 //   palette: {
 //     danger: {
@@ -39,7 +39,7 @@ function DrawerAppBar(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
         ShopKart.
       </Typography>
@@ -47,81 +47,108 @@ function DrawerAppBar(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
         ))}
-<Link to="cart">
-        <ListItem>
-          <ListItemButton>
-          <Badge badgeContent={4} sx={{
-                "& .MuiBadge-badge": {
-                  color: "white",
-                  backgroundColor: "red"
-                }
-              }}>
-              <ShoppingCartIcon style={{color:"black"}}/>
+        <Link to="cart">
+          <ListItem>
+            <ListItemButton>
+              <Badge
+                badgeContent={4}
+                sx={{
+                  "& .MuiBadge-badge": {
+                    color: "white",
+                    backgroundColor: "red",
+                  },
+                }}
+              >
+                <ShoppingCartIcon style={{ color: "black" }} />
               </Badge>
-            
-          </ListItemButton>
-        </ListItem>
-
+            </ListItemButton>
+          </ListItem>
         </Link>
       </List>
     </Box>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
-//   const StyledButton = styled(Button)(`
-//   text-transform: none;
-// `);
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
+  //   const StyledButton = styled(Button)(`
+  //   text-transform: none;
+  // `);
   return (
     <Box>
-      <AppBar  component="nav" style={{backgroundColor:'#087cec'}}>
-        <Toolbar className='navbar'>
+      <AppBar component="nav" style={{ backgroundColor: "#087cec" }}>
+        <Toolbar className="navbar">
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontSize: '35px', fontFamily: 'Helvetica', fontWeight: '500'}}
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", sm: "block" },
+              fontSize: "35px",
+              fontFamily: "Helvetica",
+              fontWeight: "500",
+            }}
           >
-            <Link to="/" className='link'>   <span  style={{color:"white", textDecoration:"none"}}>ShopKart.</span></Link>
-         
+            <Link to="/" className="link">
+              {" "}
+              <span style={{ color: "white", textDecoration: "none" }}>
+                ShopKart.
+              </span>
+            </Link>
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-          <Link to="products" className='link'>
-              <Button sx={{ color: '#fff', textTransform: 'none', fontFamily: 'Helvetica', fontWeight: '10'}}>
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Link to="products" className="link">
+              <Button
+                sx={{
+                  color: "#fff",
+                  textTransform: "none",
+                  fontFamily: "Helvetica",
+                  fontWeight: "10",
+                }}
+              >
                 Products
               </Button>
-
-              </Link>
-              <Button sx={{ color: '#fff', textTransform: 'none', fontFamily: 'Helvetica', fontWeight: '10'}}>
+            </Link>
+            <Button
+              sx={{
+                color: "#fff",
+                textTransform: "none",
+                fontFamily: "Helvetica",
+                fontWeight: "10",
+              }}
+            >
               Login
             </Button>
-      
-            <Link to="cart" className='link'>
-            <Button>
-            <Badge badgeContent={4} sx={{
-                "& .MuiBadge-badge": {
-                  color: "white",
-                  backgroundColor: "red"
-                }
-              }}>
-              <ShoppingCartIcon  style={{color:"black"}}/>
-              </Badge>
-            </Button>
+
+            <Link to="cart" className="link">
+              <Button>
+                <Badge
+                  badgeContent={4}
+                  sx={{
+                    "& .MuiBadge-badge": {
+                      color: "white",
+                      backgroundColor: "red",
+                    },
+                  }}
+                >
+                  <ShoppingCartIcon style={{ color: "black" }} />
+                </Badge>
+              </Button>
             </Link>
           </Box>
-          
         </Toolbar>
       </AppBar>
       <Box component="nav">
@@ -134,8 +161,11 @@ function DrawerAppBar(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
         >
           {drawer}
@@ -143,9 +173,7 @@ function DrawerAppBar(props) {
       </Box>
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
-        <Typography>
-          
-        </Typography>
+        <Typography></Typography>
       </Box>
     </Box>
   );
