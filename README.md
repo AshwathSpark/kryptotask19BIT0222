@@ -24,7 +24,7 @@ The CSS framework/library used is Material UI.
 ## Register
 ![Register page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/5.png)
 ## Firebase console
-![Firebase console page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/7.png)
+![Firebase console page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/8.png)
 ## Product Details page
 ![Product detials page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/4.png)
 ## Login fill
