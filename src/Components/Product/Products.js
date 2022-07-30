@@ -13,6 +13,7 @@ import { Chip } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import "./Products.css";
+import ProductItems from "./Details";
 
 function Products() {
   const [products, setproducts] = useState([]);

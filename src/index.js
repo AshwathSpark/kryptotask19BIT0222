@@ -11,6 +11,7 @@ import {
 import DrawerAppBar from './Components/Menu/Menu';
 import App from './App';
 import Products from './Components/Product/Products';
+import Details from './Components/Product/Details';
 import Cart from './Components/Cart/Cart';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
@@ -25,7 +26,7 @@ onAuthStateChanged(auth, (user) => {
       <Route path="products" element={<Products />} />
         <Route path="cart" element={<Cart/>} />
         <Route path="/" element={<Products />} />
-        
+        <Route path="/details" element={<Details />} />
 
         <Route
       path="*"
