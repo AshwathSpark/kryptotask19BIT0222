@@ -31,6 +31,7 @@ function Products() {
     };
 
     fetchData();
+    //using useEffect to get all the products form our json data
   }, []);
 
   return (
@@ -42,6 +43,7 @@ function Products() {
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
           {products.map((product) => (
+            // Exporting all the products using map
             <>
               <Grid container xs={12} sm={6} md={2.4}>
                 <Card sx={{ width: 300 }} style={{ margin: "5%" }}>

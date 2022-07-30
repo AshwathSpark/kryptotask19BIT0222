@@ -13,7 +13,7 @@ root.render(
   <BrowserRouter>
     <DrawerAppBar />
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<App />} />{/* Main page of the app*/}
       <Route path="/products" element={<Products />} />
       <Route path="/cart" element={<Cart />} />
     </Routes>

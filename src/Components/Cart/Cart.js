@@ -37,8 +37,8 @@ export default function Cart() {
   const theme = useTheme();
 
   return (
-    <div className="cartPage">
-      <Box sx={{ flexGrow: 1 }}>
+    <div className="cartPage">{/* Page for cart */}
+      <Box sx={{ flexGrow: 1 }}>{/* Cart details with the products */}
         <Grid container spacing={2}>
           <Grid item xs={8}>
             <Item>
@@ -132,7 +132,7 @@ export default function Cart() {
               Place Order
             </Button>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={4}>{/* Price summary and total */}
             <Item>
               <Typography variant="h5" component="div" gutterBottom>
                 Price Details
