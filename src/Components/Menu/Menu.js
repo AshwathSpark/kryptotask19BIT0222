@@ -28,7 +28,6 @@ import { useNavigate } from 'react-router-dom'
 
 const drawerWidth = 240;
 const navItems = ["Products", "Login"];
-
 function DrawerAppBar(props) {
   
   const [isloggedin, setloggedin] = useState(false)

@@ -19,8 +19,8 @@ import { useNavigate } from 'react-router-dom'
 const theme = createTheme({
   palette: {
     neutral: {
-      main: '#087cec',
-      contrastText: '#fff',
+      main: "#087cec",
+      contrastText: "#fff",
     },
   },
 });
@@ -158,10 +158,8 @@ function App() {
       </Box>
 
       </div>
-
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;
