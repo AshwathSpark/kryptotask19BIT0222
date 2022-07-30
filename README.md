@@ -4,7 +4,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 The CSS framework/library used is Material UI.
-
+(Note : All the commits are done in master branch)
+(incomplete code is put in a new branch)
 
 ## Development Setup
 
@@ -21,11 +22,13 @@ The CSS framework/library used is Material UI.
 ## Products page
 ![Login page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/1.png)
 ## Register
-![Product detials page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/5.png)
+![Register page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/5.png)
+## Firebase console
+![Firebase console page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/7.png)
 ## Product Details page
 ![Product detials page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/4.png)
 ## Login fill
-![Product detials page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/6.png)
+![Login fill page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/6.png)
 
 ## Application Functionality
 
