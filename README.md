@@ -16,13 +16,16 @@ The CSS framework/library used is Material UI.
 
 ## Login/Register page
 ![Login page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/3.png)
-## Home page
-![Login page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/1.png)
 ## Cart page
 ![Cart page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/2.png)
 ## Products page
 ![Login page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/1.png)
-
+## Register
+![Product detials page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/5.png)
+## Product Details page
+![Product detials page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/4.png)
+## Login fill
+![Product detials page](https://github.com/AshwathSpark/kryptotask19BIT0222/blob/master/src/capture/6.png)
 
 ## Application Functionality
 
